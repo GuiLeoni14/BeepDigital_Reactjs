@@ -26,5 +26,6 @@ export const Text = styled.div`
     }
     & > span {
         font-weight: 400;
+        white-space: nowrap;
     }
 `;

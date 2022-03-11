@@ -2,7 +2,7 @@ import { Container, Icon, Text } from './styles';
 type ContactProps = {
     text: string;
     description: string;
-    icon: any;
+    icon: string;
 };
 
 function Contact({ text, description, icon }: ContactProps) {
@@ -12,8 +12,8 @@ function Contact({ text, description, icon }: ContactProps) {
                 <img src={icon} alt="" />
             </Icon>
             <Text>
-                <h6>Siga-nos</h6>
-                <span>inesquecíveis</span>
+                <h6>{text}</h6>
+                <span>{description}</span>
             </Text>
         </Container>
     );
