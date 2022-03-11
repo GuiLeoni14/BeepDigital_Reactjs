@@ -10,7 +10,7 @@ export default createGlobalStyle`
         outline: none;
         list-style: none;
         text-decoration: none;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         color: ${(props) => props.theme.colors.title};
     }
     body{
