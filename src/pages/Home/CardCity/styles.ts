@@ -17,6 +17,7 @@ export const Top = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     & > img:last-child {
         width: 100%;
         max-width: 28.8rem;
@@ -48,5 +49,23 @@ export const Bottom = styled.div`
         font-weight: bold;
     }
 `;
-export const IconDiscount = styled.img``;
-export const IconPlane = styled.img``;
+export const IconDiscount = styled.div`
+    width: 7.2rem;
+    line-height: 3.2rem;
+    border-radius: 1rem;
+    background-color: ${({ theme }) => theme.colors.gray};
+    position: absolute;
+    top: 0rem;
+    left: 0.4rem;
+    & > span {
+        font-size: 1.2rem;
+        padding: 0rem 1.5rem;
+        font-weight: bold;
+        color: ${({ theme }) => theme.colors.primary};
+    }
+`;
+export const IconPlane = styled.img`
+    position: absolute;
+    top: 0rem;
+    right: 0.4rem;
+`;

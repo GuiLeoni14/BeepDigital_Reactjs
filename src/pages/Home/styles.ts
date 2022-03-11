@@ -23,5 +23,5 @@ export const MainCity = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1.6rem;
+    gap: 7rem 1.6rem;
 `;

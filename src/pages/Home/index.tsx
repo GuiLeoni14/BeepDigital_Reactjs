@@ -53,24 +53,59 @@ export default function Home() {
                     title="Turquia E Terra Santa Com Aéreo"
                     date="Sex. Jun 10/2022"
                     price="A Partir De 15X De R$635,00"
+                    showButton={true}
+                    showPlane={true}
+                    discount="25%Off"
                 />
                 <CardCity
                     iconUrl={getImageUrl('city-two.png')}
                     title="Morro De São Paulo"
                     date="Qui. Set 29/2022 Qua.Out 05/2022"
                     price="A Partir De 12X De R$266,00"
+                    discount="25%Off"
                 />
                 <CardCity
                     iconUrl={getImageUrl('city-try.png')}
                     title="Fortaleza"
                     date="Sab. Out 01/2022 Qua.Out 05/2022"
                     price="A Partir De 15X De R$105,00"
+                    discount="25%Off"
                 />
                 <CardCity
                     iconUrl={getImageUrl('city-for.png')}
                     title="Salvador"
                     date="Qui. Set 29/2022 Qua.Out 05/2022"
                     price="A Partir De 12X De R$175,00"
+                    discount="25%Off"
+                />
+                <CardCity
+                    iconUrl={getImageUrl('city-one.png')}
+                    title="Turquia E Terra Santa Com Aéreo"
+                    date="Sex. Jun 10/2022"
+                    price="A Partir De 15X De R$635,00"
+                    showButton={true}
+                    discount="25%Off"
+                />
+                <CardCity
+                    iconUrl={getImageUrl('city-two.png')}
+                    title="Morro De São Paulo"
+                    date="Qui. Set 29/2022 Qua.Out 05/2022"
+                    price="A Partir De 12X De R$266,00"
+                    discount="25%Off"
+                />
+                <CardCity
+                    iconUrl={getImageUrl('city-try.png')}
+                    title="Fortaleza"
+                    date="Sab. Out 01/2022 Qua.Out 05/2022"
+                    price="A Partir De 15X De R$105,00"
+                    discount="25%Off"
+                />
+                <CardCity
+                    iconUrl={getImageUrl('city-for.png')}
+                    title="Salvador"
+                    date="Qui. Set 29/2022 Qua.Out 05/2022"
+                    price="A Partir De 12X De R$175,00"
+                    discount="25%Off"
                 />
             </MainCity>
         </Container>
