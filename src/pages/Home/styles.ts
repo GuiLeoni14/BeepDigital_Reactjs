@@ -16,3 +16,12 @@ export const MainInfo = styled.div`
     flex-wrap: wrap;
     gap: 5rem;
 `;
+
+export const MainCity = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+`;
