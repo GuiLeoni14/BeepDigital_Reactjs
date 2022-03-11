@@ -1,6 +1,6 @@
 import { MainContainer } from '../../styles/container';
 import SlideHero from './Slide';
-import { Container, MainHome, MainInfo, MainCity } from './styles';
+import { Container, MainHome, MainInfo, MainCity, MainSale } from './styles';
 import img_slide from '../../assets/img/bg-home.jpg';
 import CardInfo from './CardInfo';
 import img_time from '../../assets/img/icon-time.svg';
@@ -10,6 +10,7 @@ import img_phone from '../../assets/img/icon-phone.svg';
 import img_like from '../../assets/img/icon-like.svg';
 import CardCity from './CardCity';
 import img_city_one from '../../assets/img/city-one.png';
+import CardSale from './CardSale';
 export default function Home() {
     function getImageUrl(name: string): string {
         return new URL(`../../assets/img/${name}`, import.meta.url).href;
@@ -108,6 +109,14 @@ export default function Home() {
                     discount="25%Off"
                 />
             </MainCity>
+            <MainSale>
+                <CardSale
+                    title="Sua viagem completa e toda segurança"
+                    description="Aqui na Total Tour você encontra com pacotes aéreos, hotéis e passeios incríveis, os nossos serviços garante uma viagem mais tranquila. São milhares de opções de pacotes nacionais perfeito para você."
+                    iconUrl={getImageUrl('icon-protection.svg')}
+                    checkOut="Confira os nossos pacotes"
+                />
+            </MainSale>
         </Container>
     );
 }

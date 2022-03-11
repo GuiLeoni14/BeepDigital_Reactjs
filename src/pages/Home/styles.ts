@@ -25,3 +25,7 @@ export const MainCity = styled.div`
     flex-wrap: wrap;
     gap: 7rem 1.6rem;
 `;
+
+export const MainSale = styled.div`
+    width: 100%;
+`;
