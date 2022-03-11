@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.button`
+export const Button = styled.button`
     padding: 0rem 1.8rem;
     line-height: 4rem;
     border-radius: 1rem;
@@ -14,6 +14,13 @@ export const Container = styled.button`
     cursor: pointer;
     color: ${({ theme }) => theme.colors.primary};
     transition: all 0.3s;
+    ${({ className }) =>
+        className?.includes('submit') &&
+        css`
+            line-height: 6.3rem;
+            font-size: 2rem;
+            padding: 0rem 6.7rem;
+        `};
 `;
 
 export const Icon = styled.img`

@@ -9,11 +9,9 @@ export default function MyRoutes() {
         <Router>
             <GlobalStyle />
             <Header />
-            <MainContainer>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </MainContainer>
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
             <Footer />
         </Router>
     );

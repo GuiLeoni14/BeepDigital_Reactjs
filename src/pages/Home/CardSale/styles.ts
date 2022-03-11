@@ -9,19 +9,23 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
     padding-bottom: 2.5rem;
+    border-radius: 1rem;
+    padding: 2.5rem 0rem;
+    box-shadow: 0rem 1rem 2rem #00000012;
     & > span {
         color: ${({ theme }) => theme.colors.second};
         font-size: 1.4rem;
         font-weight: bold;
         align-self: flex-end;
         margin-right: 2.5rem;
+        margin-top: 7.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 `;
 export const Text = styled.div`
-    padding: 2.5rem 7.1rem;
+    padding: 0rem 7.1rem;
     display: flex;
     align-items: center;
     justify-content: center;

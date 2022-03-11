@@ -1,14 +1,22 @@
-import { Container, Icon } from './styles';
+import { Button, Icon } from './styles';
 type DefaultButtonProps = {
     text: string;
-    iconUrl: string;
+    iconUrl?: string;
     customClass?: string;
 };
 export function DefaultButton({ text, customClass, iconUrl }: DefaultButtonProps) {
     return (
-        <Container className={customClass}>
-            {iconUrl && <Icon src={iconUrl} />}
-            {text}
-        </Container>
+        <>
+            {customClass === 'submit' ? (
+                <Button type="submit" className={customClass}>
+                    {text}
+                </Button>
+            ) : (
+                <Button className={customClass}>
+                    {iconUrl && <Icon src={iconUrl} />}
+                    {text}
+                </Button>
+            )}
+        </>
     );
 }
