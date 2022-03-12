@@ -28,6 +28,9 @@ export const Text = styled.h4`
         text-align: center;
         margin: 0rem 1rem;
     }
+    @media (max-width: 530px) {
+        display: none;
+    }
 `;
 
 export const ListContact = styled.ul`
