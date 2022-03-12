@@ -25,4 +25,9 @@ export const Container = styled.div`
         text-align: center;
         max-width: 33.6rem;
     }
+    @media (max-width: 800px) {
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
 `;

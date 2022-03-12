@@ -20,6 +20,10 @@ export const Button = styled.button`
             line-height: 6.3rem;
             font-size: 2rem;
             padding: 0rem 6.7rem;
+            @media (max-width: 1080px) {
+                padding: 0rem 4rem;
+                line-height: 5rem;
+            }
         `};
 `;
 

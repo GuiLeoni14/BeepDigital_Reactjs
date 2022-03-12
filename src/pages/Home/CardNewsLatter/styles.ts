@@ -5,12 +5,22 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 880px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 export const LeftContent = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media (max-width: 1080px) {
+        max-width: 45%;
+    }
+    @media (max-width: 880px) {
+        margin-bottom: 2rem;
+    }
 `;
 export const RightContent = styled.div`
     width: 100%;
@@ -34,6 +44,14 @@ export const Text = styled.div`
         font-weight: 200;
         color: ${({ theme }) => theme.colors.primary};
     }
+    @media (max-width: 1080px) {
+        & > h2 {
+            font-size: 2.2rem;
+        }
+        & > span {
+            font-size: 1.8rem;
+        }
+    }
 `;
 export const Icon = styled.img``;
 export const Input = styled.input`
@@ -45,4 +63,7 @@ export const Input = styled.input`
     height: 6.3rem;
     margin-right: 1.6rem;
     background-color: ${({ theme }) => theme.colors.primary};
+    @media (max-width: 1080px) {
+        height: 5rem;
+    }
 `;

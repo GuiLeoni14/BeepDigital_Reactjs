@@ -21,6 +21,15 @@ export const Container = styled.div`
     & > p > span {
         font-weight: bold;
     }
+    @media (max-width: 1312px) {
+        max-width: 20rem;
+    }
+    @media (max-width: 1228px) {
+        max-width: 21.6rem;
+    }
+    @media (max-width: 408px) {
+        max-width: 19rem;
+    }
 `;
 
 export const Icon = styled.img`

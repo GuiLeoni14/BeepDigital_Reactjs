@@ -38,3 +38,10 @@ export const ListContact = styled.ul`
         display: none;
     }
 `;
+
+export const ButtonMenuMobile = styled.div`
+    display: none;
+    @media (max-width: 1000px) {
+        display: block;
+    }
+`;

@@ -34,3 +34,28 @@ export const MainMenuMobile = styled.aside`
     justify-content: flex-start;
     position: relative;
 `;
+
+export const Logo = styled.div``;
+export const Text = styled.div`
+    margin: 2rem 0rem;
+    font-style: normal;
+    font-size: 1.8rem;
+    letter-spacing: 0rem;
+    font-weight: 500;
+    color: ${({ theme }) => theme.colors.title};
+    & > span {
+        font-weight: bold;
+    }
+`;
+export const ListContact = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    & > div {
+        margin: 0;
+    }
+    & > div:not(:first-child) {
+        margin-top: 2rem;
+    }
+`;
