@@ -20,14 +20,14 @@ function Header() {
     return (
         <Container>
             <MainContainer>
-                <MainHeader data-aos="fade-down">
-                    <Logo>
+                <MainHeader>
+                    <Logo data-aos="fade-down">
                         <img src={logo} alt="" />
                     </Logo>
                     <Text>
                         Há <span>26 anos</span> realizando viagens <span>inesquecíveis.</span>
                     </Text>
-                    <ListContact>
+                    <ListContact data-aos="fade-down">
                         <Contact text="Siga-nos" description="@Totaltour" icon={icon_insta} />
                         <Contact text="Siga-nos" description="(11) 94953-0627" icon={icon_phone} />
                         <Contact text="Siga-nos" description="Leonardo@Totaltour.Com.Br" icon={icon_email} />
