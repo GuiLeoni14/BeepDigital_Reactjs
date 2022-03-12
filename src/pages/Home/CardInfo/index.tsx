@@ -9,7 +9,7 @@ type CardInfoProps = {
 
 function CardInfo({ children, iconUrl }: CardInfoProps) {
     return (
-        <Container>
+        <Container data-aos="zoom-in-up">
             <Icon src={iconUrl} />
             {children}
         </Container>

@@ -20,7 +20,7 @@ function Header() {
     return (
         <Container>
             <MainContainer>
-                <MainHeader>
+                <MainHeader data-aos="fade-down">
                     <Logo>
                         <img src={logo} alt="" />
                     </Logo>

@@ -11,7 +11,7 @@ interface CardSaleProps {
 
 function CardSale({ title, description, iconUrl, checkOut }: CardSaleProps) {
     return (
-        <Container>
+        <Container data-aos="fade-down">
             <Text>
                 <Icon src={iconUrl} />
                 <h3>{title}</h3>
