@@ -23,6 +23,7 @@ function SlideHero({ slideOne, slideTwo, slideTry }: SlideHeroProps) {
                 navigation
                 autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: true }}
                 pagination={{ clickable: true }}
+                data-aos="zoom-in-down"
             >
                 <SwiperSlide>
                     <Slide background={slideOne}>

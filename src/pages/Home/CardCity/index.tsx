@@ -16,7 +16,7 @@ interface CardCityProps {
 function CardCity({ title, date, iconUrl, price, showPlane, showButton, discount }: CardCityProps) {
     return (
         <Container>
-            <Top>
+            <Top data-aos="zoom-out-down">
                 {discount && (
                     <IconDiscount>
                         <span>{discount}</span>
