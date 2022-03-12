@@ -8,9 +8,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/react-router-dom": "^5.3.3",
-    "@types/styled-components": "^5.1.24",
-    "@types/swiper": "^6.0.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,6 +16,9 @@
     "swiper": "^8.0.7"
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "@types/styled-components": "^5.1.24",
+    "@types/swiper": "^6.0.0",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
