@@ -19,6 +19,8 @@ export const LeftContent = styled.div`
         max-width: 45%;
     }
     @media (max-width: 880px) {
+        max-width: 100%;
+        justify-content: center;
         margin-bottom: 2rem;
     }
 `;
@@ -27,6 +29,12 @@ export const RightContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 480px) {
+        flex-direction: column;
+        & > input {
+            margin-bottom: 2rem;
+        }
+    }
 `;
 export const Text = styled.div`
     margin-left: 2rem;
