@@ -8,6 +8,9 @@ export const Container = styled.div`
     .swiper-button-prev,
     .swiper-button-next {
         color: #fff !important;
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 `;
 export const Slide = styled.img`
