@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <Container>
             <MainContainer>
-                <MainFooter>
+                <MainFooter data-aos="fade-up">
                     <CardContact
                         text="Email"
                         description="leonardo@totaltour.com.br"
