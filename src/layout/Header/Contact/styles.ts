@@ -6,6 +6,9 @@ export const Container = styled.div`
     justify-content: center;
     & + div {
         margin-left: 3.9rem;
+        @media (max-width: 1260px) {
+            margin-left: 1rem;
+        }
     }
 `;
 

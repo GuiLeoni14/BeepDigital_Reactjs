@@ -24,10 +24,17 @@ export const Text = styled.h4`
     & > span {
         font-weight: bold;
     }
+    @media (max-width: 1260px) {
+        text-align: center;
+        margin: 0rem 1rem;
+    }
 `;
 
 export const ListContact = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `;

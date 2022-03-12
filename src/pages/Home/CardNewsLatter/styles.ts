@@ -31,7 +31,7 @@ export const Text = styled.div`
     }
     & > span {
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 200;
         color: ${({ theme }) => theme.colors.primary};
     }
 `;
