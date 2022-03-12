@@ -20,7 +20,11 @@ export default function Home() {
         <Container>
             <MainContainer>
                 <MainHero>
-                    <SlideHero slideOne={img_slide} slideTwo={img_slide} slideTry={img_slide} />
+                    <SlideHero
+                        slideOne={getImageUrl('bg-rio.jpg')}
+                        slideTwo={getImageUrl('bg-sp.jpg')}
+                        slideTry={getImageUrl('bg-bh.jpg')}
+                    />
                 </MainHero>
                 <MainInfo>
                     <CardInfo iconUrl={img_time}>
