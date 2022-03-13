@@ -11,13 +11,13 @@ interface CardSaleProps {
 
 function CardSale({ title, description, iconUrl, checkOut }: CardSaleProps) {
     return (
-        <Container data-aos="fade-down">
-            <Text>
+        <Container>
+            <Text data-aos="fade-down">
                 <Icon src={iconUrl} />
                 <h3>{title}</h3>
                 <p>{description}</p>
             </Text>
-            <span>
+            <span data-aos="fade-up">
                 {checkOut}
                 <IconCheck src={icon_arrow} />
             </span>

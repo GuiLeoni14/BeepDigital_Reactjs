@@ -4,11 +4,14 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Home from '../pages/Home';
 import { MainContainer } from '../styles/container';
-export default function MyRoutes() {
+type MyRoutesProps = {
+    toggleTheme(): void;
+};
+export default function MyRoutes({ toggleTheme }: MyRoutesProps) {
     return (
         <Router>
             <GlobalStyle />
-            <Header />
+            <Header toggleTheme={toggleTheme} />
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>

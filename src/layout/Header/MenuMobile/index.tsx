@@ -12,7 +12,7 @@ function MenuMobile({ handleMenu }: MenuMobileProps) {
     return (
         <Container>
             <Overlay onClick={handleMenu} />
-            <MainMenuMobile>
+            <MainMenuMobile data-aos="fade-right">
                 <Logo>
                     <img src={logo} alt="" />
                 </Logo>

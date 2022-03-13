@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import bg_newsletter from '../../assets/img/bg-newsletter.png';
 export const Container = styled.section`
     width: 100%;
+    padding-top: 10rem;
 `;
 export const MainHero = styled.div`
     width: 100%;

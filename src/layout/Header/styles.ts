@@ -7,12 +7,16 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${({ theme }) => theme.colors.primary};
+    position: fixed;
+    width: 100%;
+    z-index: 2022;
 `;
 export const MainHeader = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 `;
 export const Logo = styled.div``;
 export const Text = styled.h4`
@@ -46,5 +50,19 @@ export const ButtonMenuMobile = styled.div`
     display: none;
     @media (max-width: 1000px) {
         display: block;
+    }
+`;
+
+export const IconToggleTheme = styled.img`
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    bottom: -6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        fill: #fff;
     }
 `;

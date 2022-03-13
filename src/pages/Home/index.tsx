@@ -28,28 +28,28 @@ export default function Home() {
                 </MainHero>
                 <MainInfo>
                     <CardInfo iconUrl={img_time}>
-                        <p>
+                        <p data-aos="zoom-in-up">
                             Estamos há mais de 26 anos realizando <span>sonhos.</span>
                         </p>
                     </CardInfo>
                     <CardInfo iconUrl={img_person}>
-                        <p>
+                        <p data-aos="zoom-in-up">
                             Somos uma agência que trabalha com <span>atendimento personalizado</span> pra você.
                         </p>
                     </CardInfo>
                     <CardInfo iconUrl={img_hand}>
-                        <p>
+                        <p data-aos="zoom-in-up">
                             Assessoria desde a escolha do seu destino até o <span>fim da sua viagem.</span>
                         </p>
                     </CardInfo>
                     <CardInfo iconUrl={img_phone}>
-                        <p>
+                        <p data-aos="zoom-in-up">
                             Ao entrar em contato conosco será <span>atendido por especialistas</span>, e será informado
                             sobre os melhores destinos.
                         </p>
                     </CardInfo>
                     <CardInfo iconUrl={img_like}>
-                        <p>
+                        <p data-aos="zoom-in-up">
                             Tudo de acordo com o seu gosto e o <span>seu bolso.</span>
                         </p>
                     </CardInfo>

@@ -39,7 +39,7 @@ export const TextSlide = styled.div`
     & > h4,
     & > span,
     & > h2 {
-        color: ${({ theme }) => theme.colors.primary};
+        color: #fff;
     }
     & > h4 {
         font-size: 1.8rem;
