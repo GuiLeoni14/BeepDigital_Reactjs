@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import icon_letter from '../../../assets/img/icon-letter.svg';
 import { DefaultButton } from '../../../components/DefaultButton';
 import { Container, LeftContent, RightContent, Icon, Text, Input } from './styles';
