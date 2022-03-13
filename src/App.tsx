@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 function App() {
     AOS.init({
         once: true,
-        duration: 1000,
+        duration: 700,
     });
     const [theme, setTheme] = useState(light);
     const toggleTheme = () => {
