@@ -1,15 +1,8 @@
 import { MainContainer } from '../../styles/container';
 import SlideHero from './Slide';
 import { Container, MainHero, MainInfo, MainCity, MainSale, MainNewsLatter } from './styles';
-import img_slide from '../../assets/img/bg-home.jpg';
 import CardInfo from './CardInfo';
-import img_time from '../../assets/img/icon-time.svg';
-import img_person from '../../assets/img/icon-person.svg';
-import img_hand from '../../assets/img/icon-hand.svg';
-import img_phone from '../../assets/img/icon-phone.svg';
-import img_like from '../../assets/img/icon-like.svg';
 import CardCity from './CardCity';
-import img_city_one from '../../assets/img/city-one.png';
 import CardSale from './CardSale';
 import CardNewsLatter from './CardNewsLatter';
 export default function Home() {
@@ -27,28 +20,28 @@ export default function Home() {
                     />
                 </MainHero>
                 <MainInfo>
-                    <CardInfo iconUrl={img_time}>
+                    <CardInfo iconUrl={getImageUrl('icon-time.svg')}>
                         <p data-aos="zoom-in-up">
                             Estamos há mais de 26 anos realizando <span>sonhos.</span>
                         </p>
                     </CardInfo>
-                    <CardInfo iconUrl={img_person}>
+                    <CardInfo iconUrl={getImageUrl('icon-person.svg')}>
                         <p data-aos="zoom-in-up">
                             Somos uma agência que trabalha com <span>atendimento personalizado</span> pra você.
                         </p>
                     </CardInfo>
-                    <CardInfo iconUrl={img_hand}>
+                    <CardInfo iconUrl={getImageUrl('icon-hand.svg')}>
                         <p data-aos="zoom-in-up">
                             Assessoria desde a escolha do seu destino até o <span>fim da sua viagem.</span>
                         </p>
                     </CardInfo>
-                    <CardInfo iconUrl={img_phone}>
+                    <CardInfo iconUrl={getImageUrl('icon-phone.svg')}>
                         <p data-aos="zoom-in-up">
                             Ao entrar em contato conosco será <span>atendido por especialistas</span>, e será informado
                             sobre os melhores destinos.
                         </p>
                     </CardInfo>
-                    <CardInfo iconUrl={img_like}>
+                    <CardInfo iconUrl={getImageUrl('icon-like.svg')}>
                         <p data-aos="zoom-in-up">
                             Tudo de acordo com o seu gosto e o <span>seu bolso.</span>
                         </p>
