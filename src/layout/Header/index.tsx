@@ -1,15 +1,22 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useContext, useState } from 'react';
 import { MainContainer } from '../../styles/container';
 import logo from '../../assets/img/logo.png';
-import { Container, MainHeader, Logo, Text, ListContact, ButtonMenuMobile } from './styles';
+import { Container, MainHeader, Logo, Text, ListContact, ButtonMenuMobile, IconToggleTheme } from './styles';
 import Contact from './Contact';
 import icon_insta from '../../assets/img/icon-insta.svg';
 import icon_phone from '../../assets/img/icon-phone.svg';
 import icon_email from '../../assets/img/icon-email.svg';
 import icon_menu_mobile from '../../assets/img/menu-hamburger.svg';
+import icon_dark from '../../assets/img/icon-moon.svg';
+import icon_light from '../../assets/img/icon-son.svg';
 import MenuMobile from './MenuMobile';
-function Header() {
+import { ThemeContext } from 'styled-components';
+type HeaderProps = {
+    toggleTheme(): void;
+};
+function Header({ toggleTheme }: HeaderProps) {
     const [openMenu, setOpenMenu] = useState(false);
+    const { title } = useContext(ThemeContext);
     function toggleMenu() {
         const body = document.querySelector('body');
         setOpenMenu(!openMenu);
@@ -35,6 +42,7 @@ function Header() {
                     <ButtonMenuMobile onClick={toggleMenu}>
                         <img src={icon_menu_mobile} />
                     </ButtonMenuMobile>
+                    <IconToggleTheme src={title === 'dark' ? icon_light : icon_dark} onClick={toggleTheme} />
                     {openMenu && <MenuMobile handleMenu={toggleMenu} />}
                 </MainHeader>
             </MainContainer>

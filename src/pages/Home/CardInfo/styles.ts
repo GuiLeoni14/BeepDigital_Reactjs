@@ -10,7 +10,7 @@ export const Container = styled.div`
     justify-content: flex-start;
     flex-direction: column;
     background-color: ${({ theme }) => theme.colors.primary};
-    box-shadow: 0rem 1rem 2rem #00000012;
+    box-shadow: 0rem 1rem 2rem ${({ theme }) => theme.colors.shadow};
     border-radius: 1rem;
     & > p {
         margin-top: 2.7rem;

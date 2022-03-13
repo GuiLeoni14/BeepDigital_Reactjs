@@ -9,8 +9,8 @@ type CardInfoProps = {
 
 function CardInfo({ children, iconUrl }: CardInfoProps) {
     return (
-        <Container data-aos="zoom-in-up">
-            <Icon src={iconUrl} />
+        <Container>
+            <Icon src={iconUrl} data-aos="zoom-in-down" />
             {children}
         </Container>
     );

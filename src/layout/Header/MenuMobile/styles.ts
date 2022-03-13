@@ -25,7 +25,7 @@ export const MainMenuMobile = styled.aside`
     left: 0;
     width: 75%;
     height: 100%;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.background};
     padding: 3rem;
     transition: all 0.3s;
     display: flex;
@@ -42,7 +42,7 @@ export const Text = styled.div`
     font-size: 1.8rem;
     letter-spacing: 0rem;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.title};
+    color: ${({ theme }) => theme.colors.second};
     & > span {
         font-weight: bold;
     }
