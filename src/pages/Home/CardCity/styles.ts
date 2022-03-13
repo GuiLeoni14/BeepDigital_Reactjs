@@ -8,7 +8,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 20px #00000012;
+    box-shadow: 0px 0px 20px ${({ theme }) => theme.colors.shadow};
     border-radius: 1rem;
 `;
 

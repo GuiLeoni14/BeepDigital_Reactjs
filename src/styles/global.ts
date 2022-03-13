@@ -15,6 +15,7 @@ export default createGlobalStyle`
     }
     body{
         background: ${(props) => props.theme.colors.background};
+        transition: background-color .6s;
     }
     html{
         font-size: 62.5%;

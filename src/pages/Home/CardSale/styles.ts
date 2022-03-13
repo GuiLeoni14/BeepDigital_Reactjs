@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding-bottom: 2.5rem;
     border-radius: 1rem;
     padding: 2.5rem 0rem;
-    box-shadow: 0rem 1rem 2rem #00000012;
+    box-shadow: 0rem 1rem 2rem ${({ theme }) => theme.colors.shadow};
     & > span {
         color: ${({ theme }) => theme.colors.second};
         font-size: 1.4rem;

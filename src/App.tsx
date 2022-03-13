@@ -17,7 +17,7 @@ function App() {
     return (
         <div className="App">
             <ThemeProvider theme={theme}>
-                <MyRoutes />
+                <MyRoutes toggleTheme={toggleTheme} />
             </ThemeProvider>
         </div>
     );

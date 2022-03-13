@@ -45,12 +45,12 @@ export const Text = styled.div`
     & > h2 {
         font-size: 3rem;
         font-weight: bold;
-        color: ${({ theme }) => theme.colors.primary};
+        color: #fff;
     }
     & > span {
         font-size: 2rem;
         font-weight: 200;
-        color: ${({ theme }) => theme.colors.primary};
+        color: #fff;
     }
     @media (max-width: 1080px) {
         & > h2 {
@@ -70,7 +70,7 @@ export const Input = styled.input`
     max-width: 48.9rem;
     height: 6.3rem;
     margin-right: 1.6rem;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: #fff;
     @media (max-width: 1080px) {
         height: 5rem;
     }

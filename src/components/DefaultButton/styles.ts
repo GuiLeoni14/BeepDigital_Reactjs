@@ -10,9 +10,9 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: ${({ theme }) => theme.colors.second};
+    background-color: #464993;
     cursor: pointer;
-    color: ${({ theme }) => theme.colors.primary};
+    color: #fff;
     transition: all 0.3s;
     ${({ className }) =>
         className?.includes('submit') &&
