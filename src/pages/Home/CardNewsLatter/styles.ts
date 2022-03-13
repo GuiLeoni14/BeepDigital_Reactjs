@@ -70,7 +70,7 @@ export const Input = styled.input`
     max-width: 48.9rem;
     height: 6.3rem;
     margin-right: 1.6rem;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.primary};
     @media (max-width: 1080px) {
         height: 5rem;
     }
