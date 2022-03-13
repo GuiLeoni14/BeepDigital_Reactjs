@@ -1,4 +1,4 @@
-import { ReactNode, useContext, useState } from 'react';
+import { ReactNode, useContext, useEffect, useRef, useState } from 'react';
 import { MainContainer } from '../../styles/container';
 import logo from '../../assets/img/logo.png';
 import { Container, MainHeader, Logo, Text, ListContact, ButtonMenuMobile, IconToggleTheme } from './styles';
@@ -16,7 +16,28 @@ type HeaderProps = {
 };
 function Header({ toggleTheme }: HeaderProps) {
     const [openMenu, setOpenMenu] = useState(false);
-    const { title } = useContext(ThemeContext);
+    const [scrollTop, setScrollTop] = useState(0);
+    const headerRef = useRef<HTMLHeadingElement>(null);
+    const {
+        title,
+        colors: { shadow },
+    } = useContext(ThemeContext);
+
+    useEffect(() => {
+        function shadowHeader() {
+            setScrollTop(window.pageYOffset);
+            if (headerRef.current) {
+                if (scrollTop >= 100) {
+                    headerRef.current.style.boxShadow = `1rem 1rem 1rem ${shadow}`;
+                } else {
+                    headerRef.current.style.boxShadow = '';
+                }
+            }
+        }
+        window.addEventListener('scroll', shadowHeader);
+        return () => window.removeEventListener('scroll', shadowHeader);
+    }, [scrollTop, shadow]);
+
     function toggleMenu() {
         const body = document.querySelector('body');
         setOpenMenu(!openMenu);
@@ -25,7 +46,7 @@ function Header({ toggleTheme }: HeaderProps) {
         }
     }
     return (
-        <Container>
+        <Container ref={headerRef}>
             <MainContainer>
                 <MainHeader>
                     <Logo data-aos="fade-down">
