@@ -1,6 +1,6 @@
 # Projeto-Beep-Digital
 Desafio proposto por uma empresa tendo como objetivo: conhecer meus níveis de conhecimento relacionados a aplicações web.
-+ Confira o projeto aqui: https://guileoni-beep-digital.netlify.app
++ Confira o projeto aqui: https://guileoni-beep-digital.vercel.app
 > Status: Completed ⚠️
 
 ## Objetivo:
