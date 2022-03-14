@@ -14,6 +14,7 @@ export const Button = styled.button`
     cursor: pointer;
     color: #fff;
     transition: all 0.3s;
+    white-space: nowrap;
     ${({ className }) =>
         className?.includes('submit') &&
         css`
@@ -23,6 +24,11 @@ export const Button = styled.button`
             @media (max-width: 1080px) {
                 padding: 0rem 4rem;
                 line-height: 5rem;
+            }
+            @media (max-width: 530px) {
+                line-height: 4.5rem;
+                font-size: 1.8rem;
+                padding: 0rem 3rem;
             }
         `};
 `;
