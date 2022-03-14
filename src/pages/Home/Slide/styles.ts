@@ -63,4 +63,17 @@ export const TextSlide = styled.div`
         font-size: 1.6rem;
         border-radius: 0.5rem;
     }
+    @media (max-width: 360px) {
+        & > h4,
+        h4:nth-of-type(2) {
+            font-size: 1.6rem;
+        }
+        & > h2 {
+            font-size: 4rem;
+        }
+        & > span {
+            margin: 1.6rem 0rem 2rem 0rem;
+            font-size: 1.2rem;
+        }
+    }
 `;
