@@ -68,9 +68,18 @@ export const IconToggleTheme = styled.img`
     width: 4rem;
     height: 4rem;
     position: absolute;
-    bottom: -6rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 3.2rem;
+    right: 0rem;
     cursor: pointer;
     transition: all 0.3s;
+    @media (max-width: 1000px) {
+        left: 50%;
+        width: 3rem;
+        height: 3rem;
+        bottom: -2.5rem;
+        transform: translate(-50%, -50%);
+    }
+    @media (max-width: 380px) {
+        top: 0rem;
+    }
 `;
