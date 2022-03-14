@@ -60,8 +60,21 @@ export const Text = styled.div`
             font-size: 1.8rem;
         }
     }
+    @media (max-width: 360px) {
+        & > h2 {
+            font-size: 2rem;
+        }
+        & > span {
+            font-size: 1.8rem;
+        }
+    }
 `;
-export const Icon = styled.img``;
+export const Icon = styled.img`
+    @media (max-width: 360px) {
+        width: 5rem;
+        height: 5rem;
+    }
+`;
 export const Input = styled.input`
     width: 100%;
     padding: 0rem 2rem;
@@ -73,5 +86,8 @@ export const Input = styled.input`
     background-color: ${({ theme }) => theme.colors.primary};
     @media (max-width: 1080px) {
         height: 5rem;
+    }
+    @media (max-width: 360px) {
+        height: 4.5rem;
     }
 `;

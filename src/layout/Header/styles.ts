@@ -18,7 +18,13 @@ export const MainHeader = styled.div`
     justify-content: space-between;
     position: relative;
 `;
-export const Logo = styled.div``;
+export const Logo = styled.div`
+    @media (max-width: 530px) {
+        & > img {
+            max-width: 17rem;
+        }
+    }
+`;
 export const Text = styled.h4`
     font-style: normal;
     font-size: 1.8rem;
@@ -51,6 +57,11 @@ export const ButtonMenuMobile = styled.div`
     @media (max-width: 1000px) {
         display: block;
     }
+    @media (max-width: 530px) {
+        & > img {
+            max-width: 5rem;
+        }
+    }
 `;
 
 export const IconToggleTheme = styled.img`
@@ -62,7 +73,4 @@ export const IconToggleTheme = styled.img`
     transform: translate(-50%, -50%);
     cursor: pointer;
     transition: all 0.3s;
-    &:hover {
-        fill: #fff;
-    }
 `;
