@@ -9,7 +9,7 @@ Desafio proposto por uma empresa tendo como objetivo: conhecer meus níveis de c
 + Ampliar meus conceitos em Typescript juntamente ao React.
 
 ## Aprendizado
-+ Ao finalizar este projeto, pratiquei diversos conceitos relacionados a styled-components, dentre eles posso destacar a troca de tema/passagem de props entre estilos. Também utilizei este projeto para ampliar os conceitos de Typescript juntamente ao ReactJs, que eu vinha aprendendo nessas ultimas semanas.
++ Ao finalizar este projeto, pratiquei diversos conceitos relacionados a styled-components, dentre eles posso destacar a troca de tema/passagem de props entre estilos. Também utilizei este projeto para ampliar os conceitos de Typescript juntamente ao ReactJs, que eu vinha aprendendo nessas últimas semanas.
 
 ## Instalação
 - `git clone` https://github.com/GuiLeoni14/BeepDigital_Reactjs .
